@@ -1,0 +1,163 @@
+﻿body {
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .page-header-fixed .page-container {
+        margin-top: 0px !important;
+    }
+
+    .page-container {
+        margin: 0 !important;
+        padding: 10px 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #index-content-portlet {
+        padding-bottom: 17px !important;
+    }
+
+    .page-header-fixed .page-container {
+        margin-top: 55px !important;
+    }
+
+    .page-container {
+        margin: 0;
+        padding: 20px 20px 0px 0px !important;
+    }
+
+    .page-sidebar-wrapper {
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        float: left !important;
+        z-index: 99999;
+    }
+
+    .page-content-wrapper {
+        float: right !important;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .menu-icon {
+        left: 15px;
+        display: block;
+        cursor: pointer;
+        opacity: 1;
+        filter: alpha(opacity=60);
+        width: 20px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(metronic_v4.7.5/assets/layouts/layout4/img/sidebar-toggle-light.png);
+        padding: 2px;
+        text-align: center;
+        position: fixed;
+        z-index: 10001;
+        bottom: 20px;
+    }
+}
+
+.page-footer {
+    height: 0px !important;
+    padding: 0px !important;
+}
+
+.page-logo img {
+    margin: 27px 10px 0 !important;
+}
+
+.width-color {
+    background-color: blue;
+    opacity: 0.1;
+    position: absolute !important;
+    z-index: 5;
+    display: block;
+    top: 0;
+    height: 25px;
+    left: 0;
+}
+
+.con-ts {
+    position: relative;
+    display: block;
+}
+
+#user-count {
+    margin: 0;
+}
+
+.feeds li {
+    position: relative;
+}
+
+.time-information {
+    padding: 0;
+    margin: 0;
+    line-height: 13px;
+    color: #9eacb4;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.padding-top-15 {
+    padding-top: 15px;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 25px !important;
+}
+
+.no-padding-top {
+    padding-top: 0px !important;
+}
+
+.tool-filter {
+    float: right;
+}
+
+.no-padding-right {
+    padding-right: 0px !important;
+}
+
+.feeds li .col1 > .cont > .cont-col2 > .desc {
+    margin-left: 5px !important;
+    font-size: 11px;
+}
+.feeds li .col2 > .date {
+    font-size: 11px;
+}
+
+@media (min-width:1200px) {
+    .border-0 {
+    border:0px !important;  
+}
+    .padding-right-5 {
+        padding-right: 5px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-header.navbar .top-menu .navbar-nav > li.dropdown-notification .dropdown-menu {
+        margin-right: 0px !important;
+    }
+
+        .page-header.navbar .top-menu .navbar-nav > li.dropdown-notification .dropdown-menu:after, .page-header.navbar .top-menu .navbar-nav > li.dropdown-notification .dropdown-menu:before {
+            margin-right: 0px !important;
+        }
+}
+
+#index-content .portlet {
+    margin-bottom: 20px !important;
+}
+
+
+#index-content .col1 {
+    border-left: solid 5px;
+}
+
+
+/*Reports Page*/
+#reports-content .daterangepicker {
+}

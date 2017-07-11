@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "PieChart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section head {
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="~/Scripts/Create.js"></script>
+    <script type="text/javascript">
+
+        $.ajax({
+            url: 'http://api.serverstats.erstream.com/api/values/OneLevelGrid',
+            type: 'POST',
+            data: {
+                startDateTime: "2017-06-09T07:00:00Z",
+                endDateTime: "2017-06-09T09:00:00Z",
+                dataRange: "custom",
+                additionalFilters: "",
+                AggField: "Stream",
+                PublicTokenKey: "CJOOvoZnTrGJ4XLivBU6zEqpRBWFvNLV",
+                SubCompanyId: "All"
+            },
+            success: function (data) {
+                createPieChart('pie-chart', data);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+
+    </script>
+}
+
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content no-padding-top">
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-green">
+                            <i class="icon-settings font-green"></i>
+                            <span class="caption-subject bold uppercase"> Pie Chart</span>
+                        </div>
+                        <!-- BEGIN THEME PANEL -->
+
+                        <div class="tools">
+
+                        </div>
+                        <!-- END THEME PANEL -->
+                    </div>
+                    <div class="portlet-body">
+
+                        <div id="pie-chart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+
+
+
+@section scripts{
+
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script src="~/Content/metronic_v4.7.5/assets/global/scripts/app.min.js"></script>
+}

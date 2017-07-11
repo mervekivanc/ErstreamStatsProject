@@ -1,0 +1,132 @@
+﻿@using ErstreamStatsProject.helpers;
+
+<div class="page-sidebar-wrapper">
+    <!-- BEGIN SIDEBAR -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+        <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+        <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+        <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+        <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+        <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+        <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            <li class="nav-item @Html.ActivePage("Home","Index")">
+                <a href="~/Home/Index" class="nav-link nav-toggle">
+                    <i class="fa fa-dashboard"></i>
+                    <span class="title">Real Time</span>
+                </a>
+            </li>
+
+            <li class="nav-item @Html.ActivePage("Home","StreamReports")">
+                <a href="~/Home/StreamReports" class="nav-link nav-toggle">
+                    <i class="fa fa-file-movie-o"></i>
+                    <span class="title">Stream Reports</span>
+                </a>
+            </li>
+            <li class="nav-item @Html.ActivePage("Home","UserAgentReports")">
+                <a href="~/Home/UserAgentReports" class="nav-link nav-toggle">
+                    <i class="fa fa-desktop"></i>
+                    <span class="title">Useragents</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-globe"></i>
+                    <span class="title">ISP's</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-cubes"></i>
+                    <span class="title">Resolution Distrubution</span>
+                </a>
+            </li>
+            <li class="nav-item @Html.ActivePage("Home","DeviceReports")">
+                <a href="~/Home/DeviceReports" class="nav-link nav-toggle">
+                    <i class="fa fa-tablet"></i>
+                    <span class="title">Device Reports</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span class="title">Bitrate Analytics</span>
+                </a>
+            </li>
+            <li class="nav-item @Html.ActivePage("Home", "LocationReports") ">
+                <a href="~/Home/LocationReports" class="nav-link nav-toggle">
+                    <i class="fa fa-location-arrow"></i>
+                    <span class="title">Location Reports</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-child"></i>
+                    <span class="title">Session Reports</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-users"></i>
+                    <span class="title">User Reports</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-list"></i>
+                    <span class="title">Client Errors</span>
+                </a>
+            </li>
+            <li class="nav-item @Html.ActivePage("Home","PieChart")">
+                <a href="~/Home/PieChart" class="nav-link nav-toggle">
+                    <i class="fa fa-tablet"></i>
+                    <span class="title">Pie Chart</span>
+                </a>
+            </li>
+            @*<li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-bulb"></i>
+                        <span class="title">Elements</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="elements_steps.html" class="nav-link ">
+                                <span class="title">Steps</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="elements_lists.html" class="nav-link ">
+                                <span class="title">Lists</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="elements_ribbons.html" class="nav-link ">
+                                <span class="title">Ribbons</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="elements_overlay.html" class="nav-link ">
+                                <span class="title">Overlays</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="elements_cards.html" class="nav-link ">
+                                <span class="title">User Cards</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>*@
+
+        </ul>
+        <!-- END SIDEBAR MENU -->
+        <div class="menu-toggler sidebar-toggler menu-icon">
+            <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+</div>

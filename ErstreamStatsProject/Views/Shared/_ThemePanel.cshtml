@@ -1,0 +1,75 @@
+﻿<script>
+    function DropDownTest(e) {
+        updateDataTable($('#dataTableCont'), $(e).attr("data-group"), "eq", $(e).val());
+    }
+
+</script>
+
+<div class="btn-group btn-theme-panel">
+    <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
+        <i class="fa fa-filter"></i>
+    </a>
+    <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 seperator">
+                <h3>FİLTER</h3>
+                <ul class="theme-settings">
+                    <li>
+                        Stream
+                        <select id="drpStreamFilter" class="form-control input-small input-sm" data-group="Stream" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Stream Type
+                        <select id="drpStreamTypeFilter" class="form-control input-small input-sm" data-group="StreamType" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Domain
+                        <select id="drpLogFileFilter" class="form-control input-small input-sm" data-group="LogFileName" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Country
+                        <select id="drpCountryFilter" class="form-control input-small input-sm" data-group="Country" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Useragent
+                        <select id="drpUseragentFilter" class="form-control input-small input-sm" data-group="UserAgent" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Resolution
+                        <select id="drpBitrateGroupFilter" class="form-control input-small input-sm" data-group="BitrateGroup" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+
+                    @*@if (!Erstream.Serverstats.Website.Models.ViewModel.IsDigiturk)*@
+
+
+                    <li>
+                        Stream Group
+                        <select id="drpStreamGroupFilter" class="form-control input-small input-sm" data-group="StreamGroup" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+                    <li>
+                        Device Group
+                        <select id="drpDeviceGroupFilter" class="form-control input-small input-sm" data-group="DeviceGroup" onchange="DropDownTest(this)">
+                            <option value="All">All</option>
+                        </select>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

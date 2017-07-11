@@ -137,6 +137,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\small-icon-logo.png" />
+    <Content Include="README.txt" />
     <Content Include="Scripts\CountryCodeConvert.js" />
     <Content Include="Scripts\Create.js" />
     <Content Include="Scripts\DateRange.js" />
